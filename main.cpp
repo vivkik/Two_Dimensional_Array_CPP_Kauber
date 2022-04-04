@@ -43,22 +43,21 @@ int main()
     
     for (int c = 0; c < CITY; c++) // for loop inputting both city arrays into two dimensional array based on city value.
       {
-        for(int w = 0; c < WEEK; w++)
+        for(int w = 0; w < WEEK; w++)
         {
-          if(c > 1)
+          if(c == 0)
             {
               temperature[c][w] = fairbanks[w];
             }
-            else
+            else if (c == 1)
               temperature[c][w] = osaka[w];     
-            }
-        
+            } 
       }
-    for (int c = 0; c < CITY; c++)
+    for (int c = 0; c < CITY; c++) // for printing 
       {
         for ( int w = 0; w < WEEK; w ++)
           {
-            if (c > 1)
+            if (c == 0)
             {
               cout << "Fairbanks, Day: " << w +1 <<temperature[c][w]<< endl;
             }
