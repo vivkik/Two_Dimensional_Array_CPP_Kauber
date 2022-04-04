@@ -32,13 +32,27 @@ int main()
     int osaka[7] = {64, 68, 69, 69, 72, 74, 76};
     int fairbanks[7] = {21, 29, 42, 39, 24, 23, 27};
 
-    for(int w = 0; w < WEEK; ++w)
+    for(int w = 0; w < WEEK; ++w) // input values into array
       {
         w+1 >> osaka[w];
       }
     for(int w = 0; w < WEEK; ++w)
       {
         w+1 >> fairbanks[w];
+      }
+    
+  for (int c = 0; c < CITY; c++) // for loop inputting both city arrays into two dimensional array based on city value.
+      {
+        for(int w = 0; c < WEEK; w++)
+      {
+        if(c > 1)
+        {
+          temperature[c][w] = fairbanks[w];
+        }
+        else
+          temperature[c][w] = osaka[w];     
+        }
+        
       }
 
     cout << "Enter all temperature for a week of first city and then second city. \n";
