@@ -32,8 +32,15 @@ int main()
     int osaka[7] = {64, 68, 69, 69, 72, 74, 76};
     int fairbanks[7] = {21, 29, 42, 39, 24, 23, 27};
 
-    
-    
+    for(int w = 0; w < WEEK; ++w)
+      {
+        w+1 >> osaka[w];
+      }
+    for(int w = 0; w < WEEK; ++w)
+      {
+        w+1 >> fairbanks[w];
+      }
+
     cout << "Enter all temperature for a week of first city and then second city. \n";
  
     // Inserting the values into the temperature array
