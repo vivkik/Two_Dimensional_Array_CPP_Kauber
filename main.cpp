@@ -29,7 +29,11 @@ int main()
       const int WEEK = 7;
  
     int temperature[CITY][WEEK];
-    //Note your input data from the above
+    int osaka[7] = {64, 68, 69, 69, 72, 74, 76};
+    int fairbanks[7] = {21, 29, 42, 39, 24, 23, 27};
+
+    
+    
     cout << "Enter all temperature for a week of first city and then second city. \n";
  
     // Inserting the values into the temperature array
@@ -53,4 +57,6 @@ int main()
             cout << "City " << i + 1 << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
         }
     }
-   /*
+   
+  return 0;
+  }
